@@ -1,6 +1,5 @@
 package cn.com.spring;
 
-import cn.com.spring.dao.UserDAO;
 import cn.com.spring.dto.UserDTO;
 import cn.com.spring.service.UserService;
 import org.junit.Test;
