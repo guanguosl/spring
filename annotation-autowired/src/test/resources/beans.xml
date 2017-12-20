@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--<context:annotation-config />-->
+    <!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
+    <bean id="u" class="cn.com.spring.dao.UserDAO"/>
+    <!--<bean id="u2" class="cn.com.spring.dao.UserDAO"/>-->
+    <bean id="userService" class="cn.com.spring.service.UserService">
+        <!--<property name="userDAO" ref="u"></property>-->
+    </bean>
+
+
+</beans>
